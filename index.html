@@ -2,25 +2,54 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>js-calculator</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>js-calculator</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-    <div class="calculator">
-        <div class="calculator__screen">
+  <div class="calculator">
+    <div class="calculator__screen">
 
-        </div>
-
-        <div class="calculator__keyboard">
-
-        </div>
     </div>
 
-    <script src="js/main.js"></script>
+    <div class="calculator__keyboard">
+      <div class="calculator__column">
+        <button type="button" class="calculator__button calculator__clear">CE</button>
+        <button type="button" class="calculator__button">7</button>
+        <button type="button" class="calculator__button ">4</button>
+        <button type="button" class="calculator__button">1</button>
+        <button type="button" class="calculator__button ">0</button>
+      </div>
+
+      <div class="calculator__column">
+        <button type="button" class="calculator__button calculator__negative">+/-</button>
+        <button type="button" class="calculator__button ">8</button>
+        <button type="button" class="calculator__button ">5</button>
+        <button type="button" class="calculator__button ">2</button>
+        <button type="button" class="calculator__button ">.</button>
+      </div>
+
+      <div class="calculator__column">
+        <button type="button" class="calculator__button calculator__percent">%</button>
+        <button type="button" class="calculator__button ">9</button>
+        <button type="button" class=" calculator__button ">6</button>
+        <button type="button" class="calculator__button ">3</button>
+        <button type="button" class="calculator__button ">=</button>
+      </div>
+
+      <div class="calculator__column">
+        <button type="button" value="/" class="calculator__button calculator__division">/</button>
+        <button type="button" value="*" class="calculator__button calculator__multiply">*</button>
+        <button type="button" value="-" class="calculator__button calculator__minus">-</button>
+        <button type="button" value="+" class="calculator__button calculator__plus">+</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="js/main.js"></script>
 </body>
 
 </html>
