@@ -7,7 +7,42 @@ html {
 }
 
 body {
+    color: #fff;
     font-family: 'Montserrat', sans-serif;
-    font-weight: 600;
     font-size: 28px;
+    font-weight: 600;
+}
+
+.calculator {
+    background-color: #1A1B28;
+    height: 640px;
+    padding: 90px 22px 27px;
+    width: 360px;
+}
+
+.calculator__screen {
+    font-size: 50px;
+    font-weight: 700;
+    text-align: right;
+}
+
+.calculator__output {
+    border-bottom: 1px solid #1E2435;
+    line-height: 33px;
+    line-height: 67px;
+    padding-left: 34px;
+    position: relative;
+}
+
+.calculator__output:before {
+    color: #52C9DC;
+    content: '=';
+    left: 0;
+    position: absolute;
+    top: 0;
+}
+
+.calculator__operation {
+    font-size: 25px;
+    margin-top: 16px;
 }
