@@ -15,7 +15,7 @@ body {
 }
 
 .calculator {
-  width: 360px;
+  max-width: 360px;
   height: 640px;
   border: 2px solid black;
   margin: 100px auto 0;
@@ -38,8 +38,9 @@ body {
   color: #ffffff;
 }
 .calculator__screen {
+  max-width: 316px;
   height: 145px;
-  padding: 0px 22px;
+  /* padding: 0px 22px; */
   /* border: 1px solid white; */
   display: flex;
   flex-direction: column;
@@ -48,11 +49,24 @@ body {
 }
 
 .screen__first {
+  width: 316px;
+  display: flex;
+  justify-content: space-between;
   height: 90px;
   /* border: 1px solid white; */
 }
 
-.first__text {
+.screen__total {
+  height: 90px;
+  color: #52c9dc;
+  font-size: 50px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: normal;
+}
+
+.screen__first_text {
   font-size: 50px;
   font-weight: 700;
   color: #ffffff;
@@ -64,7 +78,7 @@ body {
   color: #ffffff;
 }
 
-.second__text {
+.screen__second_text {
   font-size: 25px;
   font-weight: 700;
   color: #ffffff;
