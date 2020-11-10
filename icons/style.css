@@ -25,12 +25,12 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-open_window:before {
+.icon-open:before {
   content: "\e900";
 }
-.icon-close_window:before {
+.icon-close:before {
   content: "\e903";
 }
-.icon-hide_window:before {
+.icon-hide:before {
   content: "\e902";
 }
