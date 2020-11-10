@@ -2,7 +2,9 @@ html {
   box-sizing: border-box;
 }
 
-*, *::after, *::before {
+*,
+*::after,
+*::before {
   box-sizing: inherit;
 }
 
@@ -66,7 +68,7 @@ body {
 .calculator__result {
   font-size: 50px;
   position: relative;
-  border-bottom: 1px solid #1E2435;
+  border-bottom: 1px solid #1e2435;
   line-height: 33px;
   line-height: 67px;
   padding-left: 34px;
@@ -77,7 +79,7 @@ body {
   position: absolute;
   left: 0;
   top: 0;
-  color: #52C9DC;
+  color: #52c9dc;
 }
 
 .calculator__operation {
@@ -87,6 +89,7 @@ body {
 
 .calculator__keyboard {
   display: flex;
+  justify-content: space-around;
 }
 
 .calculator__column {
@@ -108,7 +111,7 @@ body {
   font-weight: 600;
   height: 64px;
   margin-bottom: 12px;
-  margin-right: 20px;
+  margin-right: 5px;
   transition: all 0.2s;
   width: 64px;
 }
