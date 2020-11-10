@@ -34,6 +34,18 @@ body {
   text-align: right;
 }
 
+.form__result_screen {
+  display: flex;
+}
+
+.form__result_symbol {
+  display: flex;
+  align-items: center;
+  color: #52c9dc;
+  font-size: 50px;
+  font-weight: 700;
+}
+
 .calculator__control-bar {
   position: absolute;
   top: 0;
@@ -75,7 +87,7 @@ body {
 }
 
 .calculator__result:before {
-  content: '=';
+  content: "=";
   position: absolute;
   left: 0;
   top: 0;
@@ -97,6 +109,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-right: 5px;
 }
 
 .button {
@@ -111,7 +124,6 @@ body {
   font-weight: 600;
   height: 64px;
   margin-bottom: 12px;
-  margin-right: 5px;
   transition: all 0.2s;
   width: 64px;
 }
