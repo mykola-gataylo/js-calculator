@@ -20,50 +20,43 @@
     </div>
 
     <div class="calculator__screen">
-
-      <div class="calculator__output">
-        1200
-      </div>
-
-      <div class="calculator__operation">
-        75 x 4 x 4
-      </div>
-
+      <form name="form">
+        <input name="result" type="text" class="calculator__input calculator__result" readonly>
+        <input name="operation" type="text" class="calculator__input calculator__operation" readonly>
+      </form>
     </div>
 
     <div class="calculator__keyboard">
-
       <div class="calculator__column">
-        <button type="button" class="button button--blue">CE</button>
-        <button type="button" class="button">7</button>
-        <button type="button" class="button">4</button>
-        <button type="button" class="button">1</button>
-        <button type="button" class="button">0</button>
+        <button data-clear class="button button--blue">CE</button>
+        <button data-key type="button" class="button">7</button>
+        <button data-key type="button" class="button">4</button>
+        <button data-key type="button" class="button">1</button>
+        <button data-key type="button" class="button">0</button>
       </div>
 
       <div class="calculator__column">
         <button type="button" class="button button--blue">+/-</button>
-        <button type="button" class="button">8</button>
-        <button type="button" class="button">5</button>
-        <button type="button" class="button">2</button>
-        <button type="button" class="button">.</button>
+        <button data-key type="button" class="button">8</button>
+        <button data-key type="button" class="button">5</button>
+        <button data-key type="button" class="button">2</button>
+        <button data-key type="button" class="button">.</button>
       </div>
 
       <div class="calculator__column">
-        <button type="button" class="button button--blue">%</button>
-        <button type="button" class="button">9</button>
-        <button type="button" class="button">6</button>
-        <button type="button" class="button">3</button>
-        <button type="button" class="button">=</button>
+        <button data-key type="button" class="button button--blue">%</button>
+        <button data-key type="button" class="button">9</button>
+        <button data-key type="button" class="button">6</button>
+        <button data-key type="button" class="button">3</button>
+        <button data-equal type="button" class="button">=</button>
       </div>
 
       <div class="calculator__column">
-        <button type="button" class="button button--blue">/</button>
-        <button type="button" class="button button--blue">*</button>
-        <button type="button" class="button button--blue">-</button>
-        <button type="button" class="button button--blue button--long">+</button>
+        <button data-key type="button" class="button button--blue">/</button>
+        <button data-key type="button" class="button button--blue">*</button>
+        <button data-key type="button" class="button button--blue">-</button>
+        <button data-key type="button" class="button button--blue button--long">+</button>
       </div>
-
     </div>
   </div>
 
