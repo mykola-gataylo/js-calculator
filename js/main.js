@@ -39,6 +39,8 @@ equal.addEventListener('click', () => {
 
     if (result.value.length > 8) {
         result.style.fontSize = '30px';
+    } else if (result.value.length > 15) {
+        result.style.fontSize = '15px';
     } else {
         result.style.fontSize = '50px';
     }
