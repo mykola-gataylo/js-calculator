@@ -142,3 +142,11 @@ body {
   height: 30px;
   margin-right: 10px;
 }
+
+.button:active {
+  outline: #52c9dc;
+}
+
+.button:hover {
+  background-color: #52c9dc;
+}
