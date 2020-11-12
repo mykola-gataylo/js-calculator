@@ -97,7 +97,7 @@ body {
 
 .calculator__operation {
   font-size: 25px;
-  margin-top: 16px;
+  /* margin-top: 16px; */
 }
 
 .calculator__keyboard {
@@ -135,4 +135,10 @@ body {
 
 .button--long {
   height: 140px;
+}
+
+.button--delete {
+  font-size: 20px;
+  height: 30px;
+  margin-right: 10px;
 }
