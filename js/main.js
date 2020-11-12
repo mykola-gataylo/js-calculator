@@ -20,6 +20,8 @@ class Calculator {
         return this.currentOperand;
     }
 
+
+
     chooseOperation(operation) {
         if (this.currentOperand === '') {
             return;
@@ -115,17 +117,18 @@ const numberButtons = document.querySelectorAll('[data-number]');
 const operationButtons = document.querySelectorAll('[data-operation]');
 const equalsButton = document.querySelector('[data-equals]');
 const deleteButton = document.querySelector('[data-delete]');
+const plusMinusButton = document.querySelector('[data-plus-minus]');
 const clearButton = document.querySelector('[data-clear]');
 const previousOperandDisplay = document.form.operation;
 const currentOperandDisplay = document.form.result;
 
-const calculator = new Calculator(previousOperandDisplay, currentOperandDisplay)
+const calculator = new Calculator(previousOperandDisplay, currentOperandDisplay);
 
 numberButtons.forEach(button => {
     button.addEventListener('click', () => {
         calculator.appendNumber(button.innerText);
         calculator.updateDisplay();
-    })
+    });
 });
 
 operationButtons.forEach(button => {
@@ -138,6 +141,14 @@ operationButtons.forEach(button => {
 equalsButton.addEventListener('click', () => {
     calculator.compute();
     calculator.updateDisplay();
+});
+
+plusMinusButton.addEventListener('click', () => {
+    // calculator.appendNumber('');
+    if (calculator.currentOperand) {
+        calculator.currentOperand = -calculator.currentOperand;
+        calculator.updateDisplay();
+    }
 });
 
 clearButton.addEventListener('click', () => {
