@@ -127,20 +127,24 @@ body {
   margin-bottom: 12px;
   transition: all 0.2s;
   width: 64px;
+  text-align: center;
 }
 
 .button--blue {
   background-color: #52c9dc;
+  text-align: center;
 }
 
 .button--long {
   height: 140px;
+  text-align: center;
 }
 
 .button--delete {
   font-size: 20px;
   height: 30px;
   margin-right: 10px;
+  text-align: center;
 }
 
 .button:active {
