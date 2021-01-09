@@ -4,7 +4,11 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>js-calculator</title>
+  <title>JS-Calculator</title>
+  <link rel="apple-touch-icon" sizes="180x180" href="./favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="./favicon_io/site.webmanifest">
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
   <link rel="stylesheet" href="./icons/style.css">
@@ -12,7 +16,6 @@
 
 <body>
   <div class="calculator">
-
     <div class="calculator__control-bar">
       <i class="calculator__icon icon-hide"></i>
       <i class="calculator__icon icon-open"></i>
@@ -34,38 +37,38 @@
     </div>
 
     <div class="calculator__keyboard">
-    <div class="calculator__column">
-      <button data-clear class="button button--blue">CE</button>
-      <button data-number type="button" class="button">7</button>
-      <button data-number class="button">4</button>
-      <button data-number class="button">1</button>
-      <button data-number type="button" class="button">0</button>
-    </div>
+      <div class="calculator__column">
+        <button data-clear class="button button--blue">CE</button>
+        <button data-number type="button" class="button">7</button>
+        <button data-number class="button">4</button>
+        <button data-number class="button">1</button>
+        <button data-number type="button" class="button">0</button>
+      </div>
 
-    <div class="calculator__column">
-      <!--  -->
-      <button data-plus-minus type="button" class="button button--blue">+/-</button>
-      <button data-number type="button" class="button">8</button>
-      <button data-number type="button" class="button">5</button>
-      <button data-number type="button" class="button">2</button>
-      <button data-number type="button" class="button">.</button>
-    </div>
+      <div class="calculator__column">
+        <!--  -->
+        <button data-plus-minus type="button" class="button button--blue">+/-</button>
+        <button data-number type="button" class="button">8</button>
+        <button data-number type="button" class="button">5</button>
+        <button data-number type="button" class="button">2</button>
+        <button data-number type="button" class="button">.</button>
+      </div>
 
-    <div class="calculator__column">
-      <button data-operation type="button" class="button button--blue">%</button>
-      <button data-number type="button" class="button">9</button>
-      <button data-number type="button" class="button">6</button>
-      <button data-number type="button" class="button">3</button>
-      <button data-equals type="button" class="button">=</button>
-    </div>
+      <div class="calculator__column">
+        <button data-operation type="button" class="button button--blue">%</button>
+        <button data-number type="button" class="button">9</button>
+        <button data-number type="button" class="button">6</button>
+        <button data-number type="button" class="button">3</button>
+        <button data-equals type="button" class="button">=</button>
+      </div>
 
-    <div class="calculator__column">
-      <button data-operation type="button" class="button button--blue">/</button>
-      <button data-operation type="button" class="button button--blue">*</button>
-      <button data-operation type="button" class="button button--blue">-</button>
-      <button data-operation class="button button--blue button--long">+</button>
+      <div class="calculator__column">
+        <button data-operation type="button" class="button button--blue">/</button>
+        <button data-operation type="button" class="button button--blue">*</button>
+        <button data-operation type="button" class="button button--blue">-</button>
+        <button data-operation class="button button--blue button--long">+</button>
+      </div>
     </div>
-  </div>
   </div>
 
   <script src="js/main.js"></script>
